@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: -2px 1px 0 black;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.melnica {
+    position: relative;
+    width: 60vh;
+    height: 10vh;
+    animation: rotate 2s linear  infinite;
+}
+
+.lopast {
+    position: absolute;
+    width: 60vh;
+    height: 10vh;
+    background-color: black;
+
+    &--dva {
+        transform: rotate(90deg);
+    }
+}
