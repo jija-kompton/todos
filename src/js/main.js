@@ -32,6 +32,11 @@ document.addEventListener('click', (event) =>{
         const modal = event.target.closest(`.${CLASS_LIST.MODAL_ACTIVE}`);
 
         modal.classList.remove(CLASS_LIST.MODAL_ACTIVE);
+
+        document.querySelector('.adder-task').value = "";
+        document.querySelector('.adder-date').value = "";
+        document.querySelector('.adder-date-time').value = "";
+        
     }
 });
 
@@ -42,7 +47,7 @@ addButton.addEventListener ('click', ()=>{
     <li class="todo_items">
         <div class="text-space">
             <p class="todo_items todo_items-text">${document.querySelector('.adder-task').value}</p>
-            <p class="todo_items">${document.querySelector('.adder-date').value}</p>
+            <p class="todo_items">${document.querySelector('.adder-date').value}     ${document.querySelector('.adder-date-time').value}</p>
         </div>
         <div class="btn-space">
             <button class="btn btn-del"></button>
@@ -53,6 +58,7 @@ addButton.addEventListener ('click', ()=>{
     
     document.querySelector('.adder-task').value = "";
     document.querySelector('.adder-date').value = "";
+    document.querySelector('.adder-date-time').value = "";
 
     const modal = event.target.closest(`.${CLASS_LIST.MODAL_ACTIVE}`);
 
