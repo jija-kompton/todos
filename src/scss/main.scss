@@ -3,7 +3,7 @@ $transition: .3s;
 body {
     height: 100%;
     font-family: 'Lobster', cursive;
-    font-size: 16px;
+    font-size: 18px;
     background-image: radial-gradient(circle at -7.92% 9.44%, #f23cf2 0, #f23cf2 50%, #f23cf2 100%);
 };
 
@@ -12,6 +12,12 @@ body {
 *::before{
     box-sizing: border-box;
 }
+
+input {
+    padding:10px;
+    margin:10px 0;
+}
+
 
 ul{
     padding: 0;
@@ -44,6 +50,14 @@ ul{
     display: flex;
     justify-content: space-between;
     margin: 10px;
+}
+
+.text-space{
+
+    &-finish{
+    transition: 2s;
+    text-decoration: line-through;
+    }
 }
 
 .btn-add{
@@ -127,6 +141,7 @@ ul{
         opacity: 1;
     }
 }
+
 
 .btn__modal{
     display: inline-block;
